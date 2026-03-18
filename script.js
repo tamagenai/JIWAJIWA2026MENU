@@ -10,110 +10,111 @@ document.addEventListener("DOMContentLoaded", () => {
   // appUrl: アプリへジャンプするためのURL
   const appsData = [
     {
-      id: "chinese-vocabulary-master", // 例: アプリ1のID
-      name: "App①本文・文法",
+      id: "chinese-conversation-master", // 例: アプリ1のID
+      name: "App①教科書の会話文",
       description:
-        "各課の本文、文法説明が各ページに掲載されており、それぞれ音声の確認ができます。読み上げるスピードは調整可能です。",
+        "各課の会話文が各ページに掲載されており、それぞれ音声の確認ができます。",
       images: [
         // { src: "images/honbunIni.jpg", caption: "初期表示画面：最初の学習内容が表示されます。" },
         {
-          src: "images/honbunSelect.jpg",
-          caption: "選択画面：学びたいページを選択します。",
+          src: "images/会話初期画面.jpg",
+          caption: "先頭の第1課の内容が選択されています。学びたい課を選択できます。中国語の文章をクリックすると中国語の音色が流れます。",
         },
         {
-          src: "images/honbunDai1ka.jpg",
+          src: "images/会話音声入力.jpg",
           caption:
-            "学習内容が表示されます。簡体字をタップすると音声が流れます。",
+            "PRACTICEボタンをクリックすると音声入力モードになります。例文を音声入力するとAIがあなたの発音を評価してくれます。",
         },
+        {
+          src: "images/会話動画.jpg",
+          caption:
+            "上部の動画を見るボタンをクリックするとリアルな会話動画が再生されます。字幕付きなので、視覚的にも内容を理解できます。",
+        },
+        
         // { src: "images/app1_screen3.png", caption: "テスト結果：間違えた単語を復習できます。" }
       ],
       appUrl:
-        "https://script.google.com/macros/s/AKfycbz1y6it246m2yJ6t4ygoKseK9-VFdsdzcfvrh8EYI_PyM9P1sDRBeBPxH6SkHXGUxT2/exec", // あなたのアプリ1への実際のURLに置き換えてください
+        "https://tamagenai.github.io/AIhuaya/", // あなたのアプリ1への実際のURLに置き換えてください
     },
     {
       id: "pinyin-trainer", // 例: アプリ2のID
       name: "App②単語カード",
 
       description:
-        "「日本語」ー＞「中国語・ピンイン」の順に、単語カード形式で新出語句が次々と表示され、同時に音声の確認ができます。検索欄で単語を検索することも可能です(電子辞書機能)。「ピンイン入力」にチェックを入れると、ピンインで中国語を入力する問題形式になります。",
+        "単語学習画面は、主に以下の3つのエリアに分かれています。上部メニュー: 「テストモードへ」の切り替え、レッスン選択、一覧表示。中央「カード」画面: 単語の学習エリア。下部メニュー: 「学習」「My帳」「検索」「登録」の主要機能。",
       images: [
         {
-          src: "images/tangoSyoki.jpg",
-          caption: "初期画面　下一个をクリックすれば問題が表示されます。",
+          src: "images/単語初期画面.jpg",
+          caption: "初期画面　先頭の課の日本語訳がカード形式で表示されます。",
         },
+        
         {
-          src: "images/tangoJpHyouji.jpg",
+          src: "images/単語カード.jpg",
           caption:
-            "日本語が表示されます。　下一个をクリックすれば日本語に対応する中国語が表示されます。",
+            "日本語が表示されたカードをクリックすれば、中国語が表示され、同時に中国語の音声が流れます。個々の単語の右端に表示されている☆マークをクリックすればMy単語帳に登録できます。",
         },
         {
-          src: "images/tangoChina.jpg",
-          caption: "中国語が表示されると同時に中国語の音声が流れます。",
+          src: "images/単語一覧.jpg",
+          caption: "一覧ボタンをクリックすれば、その課で学習する単語一覧が表示されます。個々の単語の右端に表示されている☆マークをクリックすればMy単語帳に登録できます。",
         },
         {
-          src: "images/tangoKensaku1.jpg",
+          src: "images/単語テスト.jpg",
           caption:
-            "検索欄に検索文字を入力すると検索文字を含む単語が一覧表示されます。",
+            "上部のテストモードへボタンをクリックするとテストモードになります。表示されている日本語の中国語をピンイン入力します。",
         },
         {
-          src: "images/tangoKensaku2.jpg",
+          src: "images/単語単語帳.jpg",
           caption:
-            "検索欄にallと入力することで、全件表示します。中国語欄をクリックすると中国語音声が流れます。",
+            "下部メニューの「My帳」をクリックすれば、登録されているMy単語帳が表示されます。フラッシュカード形式と、一覧形式で表示できます。",
         },
-        {
-          src: "images/tangoPinyin1.jpg",
-          caption:
-            "ピンイン入力にチェックを入れるとピンイン入力モードになります。ピンイン入力欄が現れます。",
-        },
-        {
-          src: "images/tangoPinyin2.jpg",
-          caption: "ピンイン入力されたものが正しいかチェックします。",
-        },
+        
       ],
-      appUrl: " https://tamagenai.github.io/BANBANtango/", // あなたのアプリ2への実際のURLに置き換えてください
+      appUrl: "https://script.google.com/macros/s/AKfycbyHMCJr_fhJxugHfzjq5dj_w6AWTJZTKosiwGGeZ_4vjUDGjZhkddcS7h6if8Rj_MY/exec", // あなたのアプリ2への実際のURLに置き換えてください
     },
     {
       id: "sentence-builder", // 例: アプリ3のID
-      name: "App③練習問題（クイズ形式）",
+      name: "App③トレーニングクイズ（4択問題）",
       description:
-        "教科書の練習問題に、ゲーム感覚で手軽に挑戦することができます。教科書に解答を書き込んだ後も復習が可能で、問題を解きながら楽しく語彙や文法を習得できます。",
+        "各々の課で学習したことを4択問題のクイズ形式で表示するアプリです。",
       images: [
         {
-          src: "images/rensyuSyoki.jpg",
-          caption: "初期画面 最初の問題が表示されています。",
+          src: "images/４択初期画面.jpg",
+          caption: "クイズ一覧画面が表示されます。学習したいレッスンを選んでタップしましょう。",
         },
         {
-          src: "images/rensyuKaitou1.jpg",
-          caption: "例えば'妈'を第一声だと選択すると...",
+          src: "images/４択問題.jpg",
+          caption: "問題が表示されて、それに対する解答が表示されます。正しいものを選択してタップする。",
         },
         {
-          src: "images/rensyuCheck1.jpg",
-          caption:
-            "解答が正しい場合は、「いいね！」というコメント付きで褒められます。",
+          src: "images/４択問題正解.jpg",
+          caption: "正しいものを選択してタップしたときの表示例です。",
         },
-        {
-          src: "images/rensyuKaitou2.jpg",
-          caption: "例えば'妈'を第二声だと選択すると...",
-        },
-        {
-          src: "images/rensyuCheck2.jpg",
-          caption:
-            "解答が正しくない場合は、「もっと頑張りましょう！！」と表示されます。",
-        },
+        
       ],
       appUrl:
-        "https://script.google.com/macros/s/AKfycbybGZTMsOo7WRzPv1jr5rqUW-LE3InTBG1-4Wdne0KdP32a4DrFBwXxbsiqIc8EZbM/exec", // あなたのアプリ3への実際のURLに置き換えてください
+        "https://tamagenai.github.io/JIWA2026Quiz4taku/", // あなたのアプリ3への実際のURLに置き換えてください
     },
-    // {
-    //     id: "conversation-practice", // 例: アプリ4のID
-    //     name: "日常会話プラクティス",
-    //     description: "様々なシチュエーションでの中国語会話をロールプレイ形式で練習できます。実践的なコミュニケーション能力を向上させます。",
-    //     images: [
-    //         { src: "images/app4_screen1.png", caption: "シーン選択：空港、レストラン、買い物など。" },
-    //         { src: "images/app4_screen2.png", caption: "会話練習画面：自分のパートを録音・再生可能。" }
-    //     ],
-    //     appUrl: "https://example.com/your-app4-url" // あなたのアプリ4への実際のURLに置き換えてください
-    // }
+    {
+        id: "conversation-practice", // 例: アプリ4のID
+        name: "App④学習ポイント",
+        description: "各々の学習ポイントの説明と、その例文で構成されます。",
+        images: [
+            { src: "images/ポイント初期画面.jpg",
+              caption: "アプリの初期画面です。先頭の課の学習ポイントが一覧形式で表示されます。"
+            },
+            { src: "images/ポイントお気に入り追加.jpg",
+              caption: "一覧形式で表示された学習ポイントをタップすると、その学習ポイントの例文が表示されます。☆マークをクリックすればMy勉強帳に登録できます。"
+            },
+            { src: "images/ポイント勉強一覧.jpg",
+              caption: "上部にあるMy帳（勉強ツール）をクリックすれば、登録されている勉強帳が表示されます。フラッシュカード形式と、一覧形式で表示できます。"
+            },
+            { src: "images/ポイント勉強カード.jpg",
+              caption: "フラッシュカードをタップしたときの表示例です。カードの表を中国語にするか、日本語にするかの選択ができます。"
+            },
+           
+        ],
+        appUrl: "https://script.google.com/macros/s/AKfycbyNIOEixzidXqLXy8vkPYw9L-J1A5XzFXEe3AJH2Z0CE7UHCejWN5u9dLSdU6wBd0GZ/exec" // あなたのアプリ4への実際のURLに置き換えてください
+    }
   ];
   // ----- ここまで編集してください -----
 
