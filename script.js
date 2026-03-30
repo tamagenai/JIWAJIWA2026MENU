@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           src: "images/会話音声入力.jpg",
           caption:
-            "PRACTICEボタンをクリックすると音声入力モードになります。例文を音声入力するとAIがあなたの発音を評価してくれます。",
+            "PRACTICEボタンをクリックすると音声入力モードになります。例文を音声入力するとあなたの発音を評価してくれます。上部の音声入力練習記録をコピー　ボタンをキリックするとクリップボードに練習記録をコピーできます。",
         },
         {
           src: "images/会話動画.jpg",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       images: [
         {
           src: "images/単語初期画面.jpg",
-          caption: "初期画面　先頭の課の日本語訳がカード形式で表示されます。",
+          caption: "初期画面　先頭のレッスンの日本語訳がカード形式で表示されます。カードの表を日本語訳にするか中国語にするかの選択もできます。",
         },
         
         {
